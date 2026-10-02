@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <script src="/auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>页面不存在 · hgt.l.cd</title>
+    <title>看些别的</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -18,37 +19,22 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.96);
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
-            padding: 56px 40px;
+            padding: 48px 40px;
             max-width: 480px;
             width: 100%;
             text-align: center;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
-        .code {
-            font-size: 80px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-            margin-bottom: 16px;
-        }
+        h1 { font-size: 28px; color: #333; margin-bottom: 24px; }
 
-        h1 {
-            font-size: 22px;
-            color: #333;
-            margin-bottom: 12px;
-        }
-
-        p {
-            font-size: 15px;
-            color: #888;
-            line-height: 1.8;
-            margin-bottom: 28px;
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
         }
 
         .btn {
@@ -66,14 +52,24 @@
             background: #5568d3;
             transform: translateY(-2px);
         }
+
+        .back {
+            margin-top: 24px;
+            font-size: 14px;
+        }
+
+        .back a { color: #667eea; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="code">404 Not Found</div>
-        <h1>页面不存在</h1>
-        <p>你要找的页面可能被删了，或者链接打错了。<br>不如回首页看看？</p>
-        <a href="/" class="btn">返回首页</a>
+        <h1>看些别的 游戏相关</h1>
+        <div class="btn-group">
+            <a href="https://hgt.l.cd/nagamachi" class="btn" target="_blank">Minecraft服务器：Nagamachi长町</a>
+            <a href="https://hgt.l.cd/woa" class="btn" target="_blank">WOA机场世界</a>
+            <a href="https://hgt.l.cd" class="btn">返回首页</a>
+        </div>
+        <div class="back"><a href="/">← 返回 hgt.l.cd</a></div>
     </div>
 </body>
 </html>
