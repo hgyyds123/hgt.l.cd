@@ -3,129 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎来到 hgt.l.cd</title>
+    <title>hg 网址更新</title>
     <style>
-        * {
+        /* 让页面完全居中，背景纯白 */
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            background-color: #FFFFFF;
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 48px 40px;
-            max-width: 480px;
+        /* 图片包裹层，控制最大尺寸，防止在电脑上撑爆 */
+        .jump-container {
+            display: block;
+            max-width: 90vw;
+            max-height: 90vh;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        /* 鼠标悬停时稍微放大一点点，增加点击欲 */
+        .jump-container:hover {
+            transform: scale(1.02);
+        }
+
+        /* 确保图片自适应 */
+        .jump-container img {
             width: 100%;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 16px;
-        }
-
-        p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #667eea;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 32px;
-            border-radius: 50px;
-            font-size: 15px;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .btn:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-        }
-
-        .footer {
-            margin-top: 28px;
-            font-size: 13px;
-            color: #999;
-        }
-
-        /* 迁移提示框 */
-        .migrate-banner {
-            background: linear-gradient(135deg, #fef3c7, #fde68a);
-            border: 1px solid #f59e0b;
-            border-radius: 12px;
-            padding: 16px 24px;
-            margin: 20px auto;
-            max-width: 600px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
-        }
-
-        .migrate-banner p {
-            font-size: 15px;
-            color: #92400e;
-            margin-bottom: 12px;
-            line-height: 1.6;
-        }
-
-        .migrate-btn {
-            display: inline-block;
-            background: #f59e0b;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 32px;
-            border-radius: 50px;
-            font-size: 15px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .migrate-btn:hover {
-            background: #d97706;
+            height: auto;
+            max-width: 800px; /* 最大宽度 800px，视觉最舒服 */
+            display: block;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 加一点阴影，更有立体感 */
         }
     </style>
 </head>
 <body>
-    <div>
-        <!-- 迁移提示框 -->
-        <div class="migrate-banner">
-            <p>
-                emm...<br>
-                看起来我们的网站在全新的、更安全的网址上上线了
-            </p>
-            <a href="https://hg1.dpdns.org" class="migrate-btn">GO →</a>
-        </div>
 
-        <div class="card">
-            <h1>👋 你好，世界！</h1>
-            <h1>你要干些什么？</h1>
-            <a href="http://github.com" class="btn" target="_blank">访问 GitHub</a>
-            <a href="https://www.bilibili.com/video/BV1GJ411x7h7?" class="btn" target="_blank">查看我的身份证号码</a>
-            <a href="/looksomethingelse" class="btn">看些别的？</a>
-            <a href="/care/" class="btn">心理关怀</a>
-            <p>这是我的个人网站，部署在 GitHub Pages 上。<br>域名是 hgt.l.cd。</p>
-            <div class="footer contact">
-                问题提出与提交意见：<a href="mailto:hgyyds123456789@163.com">hgyyds123456789@163.com</a>
-            </div>
-            <div class="footer">© 2026 hgt.l.cd</div>
-        </div>
-    </div>
+    <!-- 点击图片直接跳转 -->
+    <a href="https://hg1.dpdns.org" class="jump-container">
+        <img src="jump.png" alt="点击前往新网站 hg1.dpdns.org">
+    </a>
+
 </body>
 </html>
