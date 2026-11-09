@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hg 网址更新</title>
+    <title>hg</title>
     <style>
-        /* 让页面完全居中，背景纯白 */
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #FFFFFF;
-        }
-
-        /* 图片包裹层，控制最大尺寸，防止在电脑上撑爆 */
-        .jump-container {
-            display: block;
-            max-width: 90vw;
-            max-height: 90vh;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-
-        /* 鼠标悬停时稍微放大一点点，增加点击欲 */
-        .jump-container:hover {
-            transform: scale(1.02);
-        }
-
-        /* 确保图片自适应 */
-        .jump-container img {
-            width: 100%;
-            height: auto;
-            max-width: 800px; /* 最大宽度 800px，视觉最舒服 */
-            display: block;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 加一点阴影，更有立体感 */
-        }
+      html { background: #fff; margin: 0 1em; }
+      body { font: .8125em/1.5 arial, sans-serif; text-align: center; }
+      h1 { font-size: 1.5em; font-weight: normal; margin: 1em 0 0; }
+      p#footer { color: #767676; font-size: .77em; }
+      p#footer a { background: url(//www.google.cn/intl/zh-CN_cn/images/cn_icp.gif) top right no-repeat; padding: 5px 20px 5px 0; }
+      ul { margin: 2em; padding: 0; }
+      li { display: inline; padding: 0 2em; }
+      div { -moz-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #ccc; border-radius: 20px; margin: 2em auto 1em; max-width: 650px; min-width: 320px; }
+      div:hover, div:hover * { cursor: pointer; }
+      div:hover { border-color: #999; }
+      div p { margin: .5em 0 1.5em; }
+      img { border: 0; max-width: 100%; height: auto; }
     </style>
 </head>
 <body>
-
-    <!-- 点击图片直接跳转 -->
-    <a href="https://hg1.dpdns.org" class="jump-container">
-        <img src="jump.png" alt="点击前往新网站 hg1.dpdns.org">
-    </a>
-
-</body>
+    <div>
+      <!-- 替换为你的图片，点击跳转新站 -->
+      <a href="https://hg1.dpdns.org">
+        <img src="jump.png" alt="hg" width="586" height="257">
+      </a>
+      
+      <!-- 替换为新域名，点击跳转新站 -->
+      <h1>
+        <a href="https://hg1.dpdns.org"><strong id="target">hg1.dpdns.org</strong></a>
+      </h1>
+      
+      <!-- 替换为这句台词 -->
+      <p>请收藏我们的网址</p>
+    </div>
+    
+    <!-- 保留底部的结构，把备案号换成你的（或者留空，如果你没有的话） -->
+    <p id="footer">
+      <span>hg</span>
+    </p>
+  </body>
 </html>
